@@ -1,0 +1,14 @@
+inherit rubygem
+
+NAME="ruby-molinillo"
+VERSION=0.2.3
+RELEASE=1
+CATEGORY="Ruby"
+SUMMARY="Ruby dependency resolution module"
+DESCRIPTION="Provides support for dependency resolution"
+
+ARCH=noarch
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_molinillo_CONTENTS="${RUBYGEM_INSTDIR#/} ${RUBYGEM_SPEC#/}"
+ruby_molinillo_doc_CONTENTS="${RUBYGEM_DOCDIR#/}"
